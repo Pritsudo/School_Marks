@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "432871078683",
+    "project_id": "attendencesytem",
+    "storage_bucket": "attendencesytem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432871078683:android:9f0bf265ffabc8ae12f1be",
+        "android_client_info": {
+          "package_name": "com.example.final_marks_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432871078683-5tu6a9ghv5qc03qiskekiva7dp2dbeg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxADWXEvDCl54msgEV1qAo0nozrRdAAfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432871078683-5tu6a9ghv5qc03qiskekiva7dp2dbeg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:432871078683:android:f2d58e7fa83359d712f1be",
+        "android_client_info": {
+          "package_name": "com.example.marksmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "432871078683-5tu6a9ghv5qc03qiskekiva7dp2dbeg2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxADWXEvDCl54msgEV1qAo0nozrRdAAfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "432871078683-5tu6a9ghv5qc03qiskekiva7dp2dbeg2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
