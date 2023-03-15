@@ -20,19 +20,21 @@ class _CreateSelectClassScreenState extends State<CreateSelectClassScreen> {
       appBar: AppBar(
         title: Text('Select Class'),
       ),
-      body: Container(
-        height: double.infinity,
-        width: double.infinity,
-        child: Column(
-          children: [
-            const CreateClass(),
-            const SizedBox(
-              height: 25,
-            ),
-            const ClassSelect(),
-          ],
+      body: 
+         Container(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            children: [
+              const CreateClass(),
+              const SizedBox(
+                height: 25,
+              ),
+              const ClassSelect(),
+            ],
+          ),
         ),
-      ),
+      
     );
   }
 }

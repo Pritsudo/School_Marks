@@ -1,4 +1,5 @@
 import 'package:final_marks_manager/providers/class_operation_provider.dart';
+import 'package:final_marks_manager/providers/marks_operation_provider.dart';
 import 'package:final_marks_manager/providers/select_page_provider.dart';
 import 'package:final_marks_manager/providers/student_provider.dart';
 import 'package:final_marks_manager/providers/test_subject_select_provider.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) =>  Student(grno: "",name: "",sheetno: "")),
          ChangeNotifierProvider(create: (_) =>  TestSubjectSelect()),
          ChangeNotifierProvider(create: (_) =>  SelectPage()),
+         ChangeNotifierProvider(create: (_) =>  MarksOperation()),
 
       ],
       child: MaterialApp(
