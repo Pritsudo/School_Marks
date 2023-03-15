@@ -14,7 +14,7 @@ class MarksOperation with ChangeNotifier {
         .collection('Class')
         .doc(className)
         .collection('Students')
-        .doc(student.grno)
+        .doc(student.sheetno)
         .collection('Marks')
         .doc(subjectName)
         .get();
@@ -28,7 +28,7 @@ class MarksOperation with ChangeNotifier {
       String testName,
       List<Student> students) async {
     var marksData =
-        await fetchOneStudentMarks(students[0], className, subjectName)
+        await fetchOneStudentMarks(students.last, className, subjectName)
             as dynamic;
 
     if (marksData == null) {
@@ -37,7 +37,7 @@ class MarksOperation with ChangeNotifier {
             .collection('Class')
             .doc(className)
             .collection('Students')
-            .doc(students[i].grno)
+            .doc(students[i].sheetno)
             .collection('Marks')
             .doc(subjectName)
             .set({testName: studentsMarks[i].text});
@@ -48,7 +48,7 @@ class MarksOperation with ChangeNotifier {
             .collection('Class')
             .doc(className)
             .collection('Students')
-            .doc(students[i].grno)
+            .doc(students[i].sheetno)
             .collection('Marks')
             .doc(subjectName)
             .update({testName: studentsMarks[i].text});
@@ -71,9 +71,10 @@ class MarksOperation with ChangeNotifier {
     for (int i = 0; i < studentsMarks.length; i++) {
       var marks =
           await fetchOneStudentMarks(students[i], className, subjectName);
+
       studentsMarks[i].text = marks[testName];
     }
-    return studentsMarks;
+    // return studentsMarks;
   }
 
   // Future updateOneStudentMark(

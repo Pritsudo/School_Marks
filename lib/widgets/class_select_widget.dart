@@ -54,7 +54,9 @@ class _SelectClassState extends State<ClassSelect> {
                               child: ListTile(
                                 title: Text(classValue,
                                     style: TextStyle(fontSize: 18)),
-                                trailing: Icon(Icons.send_rounded),
+                                trailing: IconButton(
+                                    onPressed: ()=>value.deleteClass(classValue) ,
+                                    icon: Icon(Icons.delete)),
                               ),
                             ),
                           );

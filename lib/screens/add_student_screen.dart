@@ -37,32 +37,35 @@ class _AddStudentState extends State<AddStudentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        TextField(
-          decoration: InputDecoration(labelText: 'Name'),
-          controller: nameController,
-        ),
-        TextField(
-          decoration: InputDecoration(labelText: 'Gr Number'),
-          controller: grNumberController,
-        ),
-        TextField(
-          decoration: InputDecoration(labelText: 'Sheet Number'),
-          controller: sheetNumberController,
-        ),
-        RaisedButton(
-          onPressed: () {
-            addData();
-            setState(() {
-              nameController.text = '';
-              grNumberController.text = '';
-              sheetNumberController.text = '';
-            });
-          },
-          child: Text('Add Student'),
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(labelText: 'Name'),
+            controller: nameController,
+          ),
+          TextField(
+            decoration: InputDecoration(labelText: 'Gr Number'),
+            controller: grNumberController,
+          ),
+          TextField(
+            decoration: InputDecoration(labelText: 'Sheet Number'),
+            controller: sheetNumberController,
+          ),
+          RaisedButton(
+            onPressed: () {
+              addData();
+              setState(() {
+                nameController.text = '';
+                grNumberController.text = '';
+                sheetNumberController.text = '';
+              });
+            },
+            child: Text('Add Student'),
+          )
+        ],
+      ),
     );
   }
 }

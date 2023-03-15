@@ -43,7 +43,7 @@ class Student with ChangeNotifier {
         .collection('Class')
         .doc(classNo)
         .collection('Students')
-        .doc(student.grno)
+        .doc(student.sheetno)
         .set(student.getJson());
 
     loadingstatus(false);

@@ -1,7 +1,8 @@
 import 'package:final_marks_manager/providers/class_operation_provider.dart';
 import 'package:final_marks_manager/providers/test_subject_select_provider.dart';
 import 'package:final_marks_manager/screens/add_student_screen.dart';
-import 'package:final_marks_manager/screens/student_screens_navigation.dart';
+import 'package:final_marks_manager/screens/student_data_screens_navigation.dart';
+import 'package:final_marks_manager/screens/students_marks_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -48,7 +49,7 @@ class SubjectSelect extends StatelessWidget {
                               onTap: () {
                                 value.setSubject(subjects[index]);
                                 Navigator.pushNamed(
-                                    context, StudentScreensNavigation.routName);
+                                    context, StudentMarksListScreen.routName);
                               },
                               child: ListTile(
                                 title: Text(subjects[index],

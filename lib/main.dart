@@ -5,7 +5,8 @@ import 'package:final_marks_manager/providers/student_provider.dart';
 import 'package:final_marks_manager/providers/test_subject_select_provider.dart';
 import 'package:final_marks_manager/screens/add_student_screen.dart';
 import 'package:final_marks_manager/screens/create_select_class_screen.dart';
-import 'package:final_marks_manager/screens/student_screens_navigation.dart';
+import 'package:final_marks_manager/screens/student_data_screens_navigation.dart';
+import 'package:final_marks_manager/screens/students_marks_list_screen.dart';
 import 'package:final_marks_manager/screens/test_subject_select_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
           CreateSelectClassScreen.routName :(context)=>CreateSelectClassScreen(),
           TestSubjectSelectScreen.routName :(context)=>TestSubjectSelectScreen(),
           AddStudentScreen.routName :(context)=>AddStudentScreen(),
-          StudentScreensNavigation.routName :(context)=>StudentScreensNavigation(),
+          StudentDataScreensNavigation.routName :(context)=>StudentDataScreensNavigation(),
+          StudentMarksListScreen.routName :(context)=>StudentMarksListScreen(),
         }
       ),
       
